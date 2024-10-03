@@ -1,0 +1,561 @@
+
+
+/* This is root css file */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Guerrilla&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: auto;
+  padding: 5px;
+}
+.img_1 {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+/* center div in navbar */
+
+.center {
+  text-align: center;
+  margin-top: 10px;
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin-top: 15px;
+  gap: 25%;
+}
+
+.list > li > a {
+  background-color: burlywood;
+  color: beige;
+  border: 2px solid #0c0c0c;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.list > li > a:hover {
+  background-color: rgb(52, 140, 234);
+  color: azure;
+  transition: background-color 0.3s;
+  padding: 8px;
+}
+.right > button {
+  background-color: blue;
+  color: white;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: rgb(234, 176, 52);
+  color: azure;
+  transition: background-color 0.3s;
+  transform: scale(1.3);
+}
+/* navar laptop screen ends */
+
+/* hero section starts for index.html*/
+
+#content h1 {
+  color: rgb(11, 11, 95);
+  width: 100%;
+  font-size: 120px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  border-style: solid;
+  border: 2% 0%;
+}
+
+/* explore section images */
+#images img {
+  margin-top: 100px;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeInOut 12s infinite;
+}
+
+#images #images1 {
+  transform: translate(-50%, -50%) rotate(-300deg);
+  animation-delay: 9s;
+}
+#images #images2 {
+  transform: translate(-50%, -50%) rotate(-320deg);
+  animation-delay: 8s;
+}
+#images #images3 {
+  transform: translate(-50%, -50%) rotate(-280deg);
+  animation-delay: 6s;
+}
+#images #images4 {
+  transform: translate(-50%, -50%) rotate(-50deg);
+  animation-delay: 4s;
+}
+#images #images5 {
+  transform: translate(-50%, -50%) rotate(-12deg);
+  animation-delay: 2s;
+}
+#images #images6 {
+  animation-delay: 0s;
+}
+
+@keyframes fadeInOut {
+  0%,
+  20% {
+    opacity: 1;
+  }
+
+  21%,
+  100% {
+    opacity: 0;
+  }
+}
+#content h4 {
+  color: rgb(11, 11, 95);
+  width: 100%;
+  font-size: 25px;
+  font-family: cursive;
+  font-weight: 600;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+/* explore section images ends here */
+
+/* media queries for mobile for landing page */
+@media screen and (max-device-width: 600px) {
+  #content h1 {
+    font-size: 70px;
+  }
+
+  #content h4 {
+    font-size: 18px;
+  }
+
+  .right > button {
+    background-color: blue;
+    color: white;
+    margin-right: 3px;
+    margin-left: 4px;
+    margin-top: 20px;
+    padding: 3px;
+    border-radius: 5px;
+  }
+  .list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 15px;
+    gap: 3%;
+    margin-left: 3px;
+  }
+  .list > li > a {
+    background-color: burlywood;
+    color: beige;
+    border: 1px solid #0c0c0c;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  .list > li > a:hover {
+    background-color: rgb(52, 140, 234);
+    color: azure;
+    transition: background-color 0.3s;
+    padding: 4px;
+  }
+  #images img {
+    width: 130px;
+    height: 180px;
+  }
+
+  .img-div {
+    width: 100%;
+    height: 200px;
+  }
+  #image {
+    width: 100%;
+    height: 100%;
+  }
+  .about-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  #about-para1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.5rem;
+    padding: 25px;
+    margin: auto;
+  }
+
+  #about-para2 {
+    margin: auto;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px;
+    padding: 25px;
+  }
+  #about-heading {
+    font-size: 35px;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+  }
+  #card1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+    align-items: center;
+  }
+  #card2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  #images img {
+    margin-top: 70px;
+    width: 200px;
+    height: 250px;
+    border-radius: 30px;
+    object-fit: cover;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeInOut 12s infinite;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+  .login-form {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    width: 200px;
+
+    border: 2px solid black;
+    line-height: 30px;
+    font-size: 16px;
+    color: rgb(26, 26, 140);
+  }
+  .btn {
+    background-color: lightblue;
+    margin-top: 10px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .btn:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    height: 30px;
+    font-size: 16px;
+  }
+  .anchor {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+  }
+  .anchor:hover {
+    color: blue;
+    text-decoration: double underline;
+  }
+  .input {
+    width: 150px;
+    height: 20px;
+    font-size: 16px;
+  }
+  .input:hover {
+    width: 180px;
+    height: 40px;
+    text-decoration: dotted underline;
+    cursor: pointer;
+    height: 30px;
+  }
+  .label {
+    font-size: 16px;
+  }
+
+  .label:hover {
+    text-decoration: wavy underline;
+    cursor: pointer;
+    font-family: cursive;
+  }
+  .remember-me:hover {
+    text-decoration: dotted underline;
+    cursor: pointer;
+
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 100px;
+  }
+
+  #form-heading {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: rgb(26, 26, 140);
+    background-color: coral;
+  }
+
+  .form {
+    padding-left: 20px;
+  }
+}
+#img-box {
+  margin: 30px;
+}
+/* explore card section laptop screen */
+
+#card1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40%;
+}
+#card2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#card-img {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+
+  padding-top: 15px;
+  width: 350px;
+  height: 550px;
+  border-radius: 10px;
+  border: 2px silver solid;
+  box-shadow: 2px 2px 2px 2px rgba(235, 196, 196, 0);
+  background-color: cyan;
+}
+#card-images {
+  width: 80%;
+  height: 60%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+#explore-para {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5rem;
+  padding: 15px;
+  background-color: burlywood;
+  margin: 10px;
+}
+#btn {
+  background-color: rgb(220, 142, 196);
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+/* Explore section ends here */
+
+/* About section for laptop*/
+
+.about-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.img-div {
+  width: 350px;
+  height: 300px;
+}
+#image {
+  width: 100%;
+  height: 100%;
+}
+#about-para1 {
+  margin-left: 30px;
+  font-size: 20px;
+  font-family: cursive;
+  line-height: 1.75rem;
+  padding: 7px;
+  height: 300px;
+  width: 400px;
+}
+#about-heading {
+  font-size: 35px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+}
+#about-para2 {
+  font-size: 20px;
+  line-height: 1.75rem;
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px;
+  padding: 10px;
+}
+/* about section laptop ends here */
+
+/*  for mobile screen */
+
+/* media queris for mobile */
+
+@media (max-width: 768px) {
+}
+
+/* Contact form section for laptop*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.login-form {
+  margin-top: -30px;
+  padding: 80px;
+
+  background-color: white;
+  border-radius: 5px;
+  width: 400px;
+
+  border: 2px solid black;
+  line-height: 30px;
+  font-size: 16px;
+  color: rgb(26, 26, 140);
+}
+.btn {
+  background-color: lightblue;
+  margin-top: 8px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  width: 80px;
+}
+.btn:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  height: 30px;
+}
+.anchor {
+  text-decoration: none;
+  color: black;
+  margin-left: 40px;
+}
+.anchor:hover {
+  color: blue;
+  text-decoration: wavy underline;
+}
+.input {
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+}
+.input:hover {
+  width: 250px;
+  height: 40px;
+  text-decoration: wavy underline;
+  cursor: pointer;
+  height: 30;
+}
+.label {
+  font-size: 20px;
+}
+
+.label:hover {
+  text-decoration: wavy underline;
+  cursor: pointer;
+  font-family: cursive;
+}
+.remember-me:hover {
+  text-decoration: wavy underline;
+  cursor: pointer;
+  background-color: burlywood;
+  border-radius: 5px;
+  margin-left: 120px;
+  width: 150px;
+}
+
+#form-heading {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: rgb(26, 26, 140);
+  background-color: coral;
+}
+
+.form {
+  padding-left: 30px;
+}
+
+/* contact form laptop ends here */
+
+/* contact form ends here for mobile and laptop  */
+
+.footer-section {
+  background-color: bisque;
+  height: 30px;
+  text-align: center;
+  color: black;
+  padding: 3px;
+} 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/cart.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="left">
+            <img class="img_1" src="/images/image.png" alt="bookLogo" />
+          </div>
+          <div class="center">
+            <ul class="list">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/explore.html">Explore</a></li>
+            </ul>
+          </div>
+          <div class="right">
+            <button id="contactButton">Contact Me</button>
+          </div>
+        </nav>
+      </header>
+    <section>
+        
+        <form id="productForm">
+          <label for="productName">Product Name:</label>
+          <input type="text" id="productName" required />
+      
+          <label for="productPrice">Price:</label>
+          <input type="number" id="productPrice" required />
+      
+          <label for="productQuantity">Quantity:</label>
+          <input type="number" id="productQuantity" value="1" required />
+      
+          <label for="productComment">Comment:</label>
+          <textarea id="productComment" placeholder="Add a comment"></textarea>
+      
+          <button type="submit" id="addToCartButton">Add to Cart</button>
+
+          <button id="viewCartButton">View Cart</button>
+          <div id="cartPopup" class="popup hidden">
+            <h3>Your Cart</h3>
+            <div id="cartItems"></div>
+            <button id="closeCartPopup">Close</button>
+          </div>
+        </form>
+        
+      
+      </section>
+
+      <footer style="
+        background-color: bisque;
+        height: 25px;
+        padding: 5px;
+        color:black;
+        text-align: center; ;
+        position: absolute;
+      bottom: 0px;
+        width: 100%;" >
+        <p>Copyright © 2024 ERUM WARIS. All rights reserved.</p>
+      </footer>
+
+      <script src="/cart.js"></script>
+</body>
+</html>
+  

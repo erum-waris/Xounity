@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore catagories</title>
+    <link rel="stylesheet" href="/explore.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="left">
+          <img class="img_1" src="/images/image.png" alt="bookLogo" />
+        </div>
+        <div class="center">
+          <ul class="list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/explore.html">Explore</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <button id="contactButton">Contact Me</button>
+        </div>
+      </nav>
+    </header>
+<section>
+  <h2 id="explore-heading">Explore our Books catagory </h2>
+    <div id="images">
+   
+
+      <div class="img-box">
+        <img id="images1" src="/images/qasim-boo1.webp" alt="book1" />
+        <img id="images2" src="/images/qasim_book2.webp" alt="book2" />
+        <img id="images3" src="/images/qasim_boo3.webp" alt="book3" />
+        <img id="images4" src="/images/qasim_book4.webp" alt="book4" />
+        <img id="images5" src="/images/qasim_book5.webp" alt="book5" />
+        <img id="images6" src="/images/qasim_book6.webp" alt="book6" />
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+  <section>
+   
+    <div id="card1">
+      
+     
+        <div id="card-img">
+            <img id="card-images" src="/images/qasim-boo1.webp" alt="book1" />
+            <p id="explore-para"> Before <strike>Rs 1500</strike> <br>
+              Now  <mark> Rs 1350 only</mark>
+                
+         </p>
+         <button id="btn1">Add to Cart  </button>
+        </div>
+        <div id="card-img">
+          <img id="card-images" src="/images/qasim_book2.webp" alt="book2" />
+          <p id="explore-para"> Before <strike>Rs 1050</strike> <br>
+            Now <mark>Rs 950</mark> only
+       </p>
+       <button id="btn2"> Add to Cart  </button>
+      </div>
+      <div id="card-img">
+        <img id="card-images" src="/images/qasim_boo3.webp" alt="book3" />
+        <p id="explore-para"> Before <strike>Rs 950</strike> <br>
+          Now <mark> Rs 900</mark> only
+     </p>
+     <button id="btn3">Add to Cart  </button>
+    </div>
+    
+    </div>
+    </section>
+    <section>
+    <div id="card2">
+      <div id="card-img">
+        <img id="card-images" src="/images/qasim_book4.webp" alt="book4" />
+        <p id="explore-para"> Before <strike>Rs 900</strike> <br>
+             Now <mark> Rs 800 </mark>only
+        </p>
+        <button id="btn4"> Add to Cart</button>
+    </div>
+    
+    
+      <div id="card-img">
+        <img id="card-images" src="/images/qasim_book5.webp" alt="book5" />
+        <p id="explore-para"> Before <strike>Rs 1200</strike> <br>
+          Now <mark>Rs1150</mark> only
+     </p>
+     <button id="btn5"> Add to Cart </button>
+    </div>
+  
+   
+    <div id="card-img">
+      <img id="card-images" src="/images/qasim_book6.webp" alt="book6" />
+      <p id="explore-para"> Before <strike>Rs 1200</strike> <br>
+        Now Rs 1050 only
+   </p>
+   <button id="btn6"> Add to Cart </button>
+      </div>
+  </div>
+    </div>
+  </section>
+
+  <footer class="footer-section" >
+    <p>�� 2024 ERUM WARIS All rights reserved</p>
+  </footer>
+
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    const contactButton = document.getElementById('contactButton');
+    const cartButton1 = document.getElementById('btn1');
+    const cartButton2 = document.getElementById('btn2');
+    const cartButton3 = document.getElementById('btn3');
+    const cartButton4 = document.getElementById('btn4');
+    const cartButton5 = document.getElementById('btn5');
+    const cartButton6 = document.getElementById('btn6');
+    
+    if (contactButton) {
+        contactButton.addEventListener('click', function() {
+            window.location.href = '/contact_me.html'; // Go to Contact page
+        });
+    }
+
+    [cartButton1, cartButton2, cartButton3, cartButton4, cartButton5, cartButton6].forEach(function(button) {
+        if (button) {
+            button.addEventListener('click', function() {
+                window.location.href = '/cart.html'; // Go to Cart page
+            });
+        }
+    });
+});
+
+  
+</script>
+  
+  </body>
+</html>

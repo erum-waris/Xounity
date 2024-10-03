@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Guerrilla&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-image: url(/images/love.webp);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: auto;
+  padding: 5px;
+}
+.img_1 {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+/* center div in navbar */
+
+.center {
+  text-align: center;
+  margin-top: 10px;
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin-top: 15px;
+  gap: 25%;
+}
+
+.list > li > a {
+  background-color: burlywood;
+  color: beige;
+  border: 2px solid #0c0c0c;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.list > li > a:hover {
+  background-color: rgb(52, 140, 234);
+  color: azure;
+  transition: background-color 0.3s;
+  padding: 8px;
+}
+.right > button  {
+  background-color: blue;
+  color: white;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: rgb(235, 194, 223);
+  color: rgb(22, 23, 23);
+  transition: background-color 0.3s;
+  transform: scale(1.3);
+}
+/* navar laptop screen ends */
+/* About section for laptop*/
+
+.about-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+
+  }
+  .img-div {
+    width: 550px;
+    height: 400px;
+    
+  }
+  #image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  #about-para1 {
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: cursive;
+    line-height: 1.95rem;
+    padding: 7px;
+    height: 300px;
+    width: 400px;
+  }
+  #about-heading {
+    font-size: 35px;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+  }
+  #about-para2 {
+    font-size: 20px;
+    line-height: 1.75rem;
+    font-family: "Times New Roman", Times, serif;
+    margin: 20px;
+    padding: 10px;
+  }
+  /* about section laptop ends here */
+  
+
+@media screen and (max-device-width: 600px) {
+
+    .right > button {
+        background-color: blue;
+        color: white;
+        margin-right: 3px;
+        margin-left: 4px;
+        margin-top: 20px;
+        padding: 3px;
+        border-radius: 5px;
+      }
+      .list {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin-top: 15px;
+        gap: 3%;
+        margin-left: 3px;
+      }                 
+      .list > li > a {
+        background-color: burlywood;
+        color: beige;
+        border: 1px solid #0c0c0c;
+        text-decoration: none;
+        padding: 3px;
+        border-radius: 3px;
+      }
+      .list > li > a:hover {
+        background-color: rgb(52, 140, 234);
+        color: azure;
+        transition: background-color 0.3s;
+        padding: 4px;
+      }
+    
+    .about-box {
+ 
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        align-items: center;
+    
+        
+      }
+      #about-para1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.3rem;
+        font-family: "Times New Roman", Times, serif;
+        line-height: 1.5rem;
+        padding: 25px;
+        margin: auto;
+       
+      }
+    
+      #about-para2 {
+        margin: auto;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        font-family: "Times New Roman", Times, serif;
+        margin: 10px;
+        padding: 25px;
+       
+      }
+      #about-heading {
+        font-size: 35px;
+        font-family: "Oswald", sans-serif;
+        margin-bottom: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: auto;
+      }
+}
+
+.footer-section {
+    background-color: bisque;
+    height: 30px;
+    text-align: center;
+    color: black;
+    padding: 3px;
+  }
