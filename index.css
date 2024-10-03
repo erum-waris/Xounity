@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Guerrilla&display=swap");
 
-body{
-    background-image: url(/images/bg-image.jpg);
-    background-size: cover;
+body {
+  background-image: url(/images/bg-image.jpg);
+  background-size: cover;
 }
 * {
   margin: 0;
@@ -72,149 +72,142 @@ button:hover {
 /* navar laptop screen ends */
 
 /* hero section starts for index.html*/
-.arrow{
-  width: 30px; border-radius: 13px; height: 30px;
+.arrow {
+  width: 30px;
+  border-radius: 13px;
+  height: 30px;
 }
 #content h1 {
-    color: rgb(11, 11, 95);
-    width: 100%;
-    font-size: 120px;
-    font-family: "Oswald", sans-serif;
-    font-weight: 600;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    text-transform: uppercase;
-    border-style: solid;
-    border: 2% 0%;
+  color: rgb(11, 11, 95);
+  width: 100%;
+  font-size: 120px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  border-style: solid;
+  border: 2% 0%;
+}
+h1:hover {
+  color: rgb(234, 176, 52);
+  transition: color 3s;
+  transform: scale(1.1);
+}
+#content > #h4-1 {
+  color: rgb(11, 11, 95);
+  width: 100%;
+  font-size: 25px;
+  font-family: cursive;
+  font-weight: 600;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+#content > #h4-2 {
+  color: rgb(11, 11, 95);
+  width: 100%;
+  font-size: 25px;
+  font-family: cursive;
+  font-weight: 600;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+@media screen and (max-device-width: 600px) {
+  #content h1 {
+    font-size: 70px;
   }
-  h1:hover{
-    color: rgb(234, 176, 52);
-    transition: color 3s;
-    transform: scale(1.1);
-  }
+
   #content > #h4-1 {
-    color: rgb(11, 11, 95);
-    width: 100%;
-    font-size: 25px;
-    font-family: cursive;
-    font-weight: 600;
+    font-size: 18px;
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    text-transform: uppercase;
-    padding: 10px;
-  }
-  #content > #h4-2 {
-    color: rgb(11, 11, 95);
-    width: 100%;
-    font-size: 25px;
-    font-family: cursive;
-    font-weight: 600;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    text-transform: uppercase;
-    padding: 10px;
-  }
-  @media screen and (max-device-width: 600px){
-   
-    .arrow{
-      display:hidden;
-    }
-    #content h1 {
-        font-size: 70px;
-      }
-      
-      #content > #h4-1 {
-        font-size: 18px;
-        position: absolute;
     top: 27%;
-    font-family:Tahoma, sans-serif;
-      }
-    
-      #content > #h4-2 {
-        font-size: 18px;
-        position: absolute;
+    font-family: Tahoma, sans-serif;
+  }
+
+  #content > #h4-2 {
+    font-size: 18px;
+    position: absolute;
     top: 75%;
-      }
-  
-    .right > button {
-        background-color: blue;
-        color: white;
-        margin-right: 1px;
-        margin-left: 5px;
-        margin-top: 20px;
-        padding: 3px;
-        border-radius: 5px;
-      }
-      .list {
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-        margin-top: 15px;
-        gap: 3%;
-        margin-left: 1px;
-      }                 
-      .list > li > a {
-        background-color: burlywood;
-        color: rgb(22, 22, 20);
-        border: 1px solid #0c0c0c;
-        text-decoration: none;
-        padding: 3px;
-        border-radius: 3px;
-      }
-      .list > li > a:hover {
-        background-color: rgb(52, 140, 234);
-        color: azure;
-        transition: background-color 0.3s;
-        padding: 4px;
-      }
-
-
+    font-family: Tahoma, sans-serif;
   }
 
-  /* footer section */
-  .footer-section{
-   font-weight: 700;
-    height: auto;
-    padding-top: 10px;
-    color:black;
-    text-align: center; ;
-    position: absolute;  
-    bottom: 0px;
-    width: 100%;
-    font-size: 1rem; 
-
+  .right > button {
+    background-color: blue;
+    color: white;
+    margin-right: 1px;
+    margin-left: 5px;
+    margin-top: 20px;
+    padding: 3px;
+    border-radius: 5px;
   }
-  .footer-nav{
+  .list {
     display: flex;
-    gap: 20px;
-    margin-top: 10px;
-    justify-content: center;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 15px;
+    gap: 3%;
+    margin-left: 1px;
+  }
+  .list > li > a {
+    background-color: burlywood;
+    color: rgb(22, 22, 20);
+    border: 1px solid #0c0c0c;
     text-decoration: none;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  .list > li > a:hover {
+    background-color: rgb(52, 140, 234);
+    color: azure;
+    transition: background-color 0.3s;
+    padding: 4px;
+  }
+}
 
-  }
-  .footer-nav > a{
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  .footer-nav > a:hover{
-    color: blue;
-    text-decoration: underline;
-  }
-  .f-img{
-   
-    width: 40px;
-    height: 40px;
-    margin-top: 10px;
-    border-radius: 20px;
-   
-  }
+/* footer section */
+.footer-section {
+  font-weight: 700;
+  height: auto;
+  padding-top: 10px;
+  color: black;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-size: 1rem;
+}
+.footer-nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  justify-content: center;
+  text-decoration: none;
+}
+.footer-nav > a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer-nav > a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.f-img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
