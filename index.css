@@ -129,7 +129,14 @@ h1:hover {
   #content h1 {
     font-size: 70px;
   }
-
+  .img_1 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
   #content > #h4-1 {
     font-size: 18px;
     position: absolute;
