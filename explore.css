@@ -199,6 +199,11 @@ button:hover {
     padding: 3px;
     border-radius: 5px;
   }
+  button:hover {
+    background-color: rgb(234, 176, 52);
+    color: azure;
+    transition: background-color 0.3s;
+    transform: scale(1.2);
   .list {
     display: flex;
     justify-content: space-around;
