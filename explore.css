@@ -181,6 +181,14 @@ button:hover {
 
 
   @media screen and (max-device-width:600px) {
+    .img_1 {
+      float: left;
+      width: 70px;
+      height: 70px;
+      margin-top: 5px;
+      margin-left: 10px;
+      border-radius: 50%;
+    }
     
   .right > button {
     background-color: blue;
